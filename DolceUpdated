@@ -1,1 +1,266 @@
+local GuI = Instance.new("ScreenGui")
+local LocalHolder = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local DolceMilk = Instance.new("TextLabel")
+local Buttomn = Instance.new("TextLabel")
+local TextButton = Instance.new("TextButton")
+local Main = Instance.new("Frame")
+local Main_2 = Instance.new("TextLabel")
+local Credits = Instance.new("TextButton")
+local StairsBreaker = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+local Avaliable = Instance.new("TextLabel")
+local ReJoin = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local Input = Instance.new("TextLabel")
 
+GuI.Name = "GuI"
+GuI.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+GuI.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+GuI.ResetOnSpawn = false
+
+LocalHolder.Name = "LocalHolder"
+LocalHolder.Parent = GuI
+LocalHolder.BackgroundColor3 = Color3.fromRGB(49, 48, 59)
+LocalHolder.BorderColor3 = Color3.fromRGB(0, 0, 0)
+LocalHolder.BorderSizePixel = 0
+LocalHolder.Position = UDim2.new(0.229452059, 0, 0.242200315, 0)
+LocalHolder.Size = UDim2.new(0, 313, 0, 30)
+
+UICorner.Parent = LocalHolder
+
+DolceMilk.Name = "DolceMilk"
+DolceMilk.Parent = LocalHolder
+DolceMilk.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+DolceMilk.BackgroundTransparency = 1.000
+DolceMilk.BorderColor3 = Color3.fromRGB(0, 0, 0)
+DolceMilk.BorderSizePixel = 0
+DolceMilk.Size = UDim2.new(0, 134, 0, 24)
+DolceMilk.Font = Enum.Font.Unknown
+DolceMilk.Text = "Dolce Milk Script!"
+DolceMilk.TextColor3 = Color3.fromRGB(213, 213, 213)
+DolceMilk.TextSize = 14.000
+DolceMilk.TextStrokeTransparency = 0.000
+
+Buttomn.Name = "Buttomn"
+Buttomn.Parent = LocalHolder
+Buttomn.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Buttomn.BackgroundTransparency = 1.000
+Buttomn.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Buttomn.BorderSizePixel = 0
+Buttomn.Position = UDim2.new(0.872204483, 0, 0, 0)
+Buttomn.Size = UDim2.new(0, 40, 0, 30)
+Buttomn.Font = Enum.Font.Highway
+Buttomn.Text = "X"
+Buttomn.TextColor3 = Color3.fromRGB(213, 213, 213)
+Buttomn.TextSize = 14.000
+Buttomn.TextStrokeTransparency = 0.000
+
+TextButton.Parent = Buttomn
+TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.BackgroundTransparency = 1.000
+TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.BorderSizePixel = 0
+TextButton.Size = UDim2.new(0, 40, 0, 24)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = " "
+TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.TextSize = 14.000
+
+Main.Name = "Main"
+Main.Parent = LocalHolder
+Main.BackgroundColor3 = Color3.fromRGB(67, 65, 80)
+Main.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Main.BorderSizePixel = 0
+Main.Position = UDim2.new(0, 0, 0.800000012, 0)
+Main.Size = UDim2.new(0, 313, 0, 154)
+
+Main_2.Name = "Main"
+Main_2.Parent = LocalHolder
+Main_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Main_2.BackgroundTransparency = 1.000
+Main_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Main_2.BorderSizePixel = 0
+Main_2.Position = UDim2.new(0, 0, 0.800000012, 0)
+Main_2.Size = UDim2.new(0, 77, 0, 24)
+Main_2.Font = Enum.Font.Unknown
+Main_2.Text = "• Main"
+Main_2.TextColor3 = Color3.fromRGB(213, 213, 213)
+Main_2.TextSize = 14.000
+Main_2.TextStrokeTransparency = 0.000
+
+Credits.Name = "Credits"
+Credits.Parent = LocalHolder
+Credits.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Credits.BackgroundTransparency = 1.000
+Credits.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Credits.BorderSizePixel = 0
+Credits.Position = UDim2.new(0.42811501, 0, 0, 0)
+Credits.Size = UDim2.new(0, 73, 0, 24)
+Credits.Font = Enum.Font.Unknown
+Credits.Text = "Credits"
+Credits.TextColor3 = Color3.fromRGB(213, 213, 213)
+Credits.TextSize = 14.000
+Credits.TextStrokeTransparency = 0.000
+
+StairsBreaker.Name = "StairsBreaker"
+StairsBreaker.Parent = LocalHolder
+StairsBreaker.BackgroundColor3 = Color3.fromRGB(49, 48, 59)
+StairsBreaker.BorderColor3 = Color3.fromRGB(0, 0, 0)
+StairsBreaker.BorderSizePixel = 0
+StairsBreaker.Position = UDim2.new(0.134185299, 0, 1.60000002, 0)
+StairsBreaker.Size = UDim2.new(0, 230, 0, 30)
+StairsBreaker.Font = Enum.Font.Unknown
+StairsBreaker.Text = "FE Stairs Breaker"
+StairsBreaker.TextColor3 = Color3.fromRGB(203, 199, 245)
+StairsBreaker.TextSize = 14.000
+StairsBreaker.TextStrokeTransparency = 0.000
+
+UICorner_2.CornerRadius = UDim.new(0, 4)
+UICorner_2.Parent = StairsBreaker
+
+Avaliable.Name = "Avaliable"
+Avaliable.Parent = LocalHolder
+Avaliable.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Avaliable.BackgroundTransparency = 1.000
+Avaliable.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Avaliable.BorderSizePixel = 0
+Avaliable.Position = UDim2.new(0.255591065, 0, 4.86666679, 0)
+Avaliable.Size = UDim2.new(0, 155, 0, 24)
+Avaliable.Font = Enum.Font.Unknown
+Avaliable.Text = "More Will Be Avaliable Soon"
+Avaliable.TextColor3 = Color3.fromRGB(213, 213, 213)
+Avaliable.TextSize = 14.000
+Avaliable.TextStrokeTransparency = 0.000
+
+ReJoin.Name = "ReJoin"
+ReJoin.Parent = LocalHolder
+ReJoin.BackgroundColor3 = Color3.fromRGB(49, 48, 59)
+ReJoin.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ReJoin.BorderSizePixel = 0
+ReJoin.Position = UDim2.new(0.137380198, 0, 3.0333333, 0)
+ReJoin.Size = UDim2.new(0, 230, 0, 30)
+ReJoin.Font = Enum.Font.Unknown
+ReJoin.Text = "Rejoiner"
+ReJoin.TextColor3 = Color3.fromRGB(203, 199, 245)
+ReJoin.TextSize = 14.000
+ReJoin.TextStrokeTransparency = 0.000
+
+UICorner_3.CornerRadius = UDim.new(0, 4)
+UICorner_3.Parent = ReJoin
+
+Input.Name = "Input"
+Input.Parent = GuI
+Input.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Input.BackgroundTransparency = 1.000
+Input.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Input.BorderSizePixel = 0
+Input.Position = UDim2.new(0.781963468, 0, 0.85796386, 0)
+Input.Size = UDim2.new(0, 200, 0, 50)
+Input.Font = Enum.Font.FredokaOne
+Input.Text = " "
+Input.TextColor3 = Color3.fromRGB(132, 249, 151)
+Input.TextScaled = true
+Input.TextSize = 14.000
+Input.TextStrokeTransparency = 0.000
+Input.TextWrapped = true
+
+-- Scripts:
+
+local function UYTJS_fake_script() -- TextButton.Destroy 
+	local script = Instance.new('LocalScript', TextButton)
+
+	script.Parent.MouseButton1Up:Connect(function()
+		local Gui = script.Parent.Parent.Parent.Parent
+		local Sound = Instance.new("Sound", script.Parent)
+		Sound.SoundId = "rbxassetid://5801257793"
+		Gui:Destroy()
+	end)
+end
+coroutine.wrap(UYTJS_fake_script)()
+local function TUHMS_fake_script() -- StairsBreaker.StairBreaker 
+	local script = Instance.new('LocalScript', StairsBreaker)
+
+	script.Parent.MouseButton1Up:Connect(function()
+		
+		local SoundClick = Instance.new("Sound", script.Parent)
+		SoundClick.SoundId = "rbxassetid://452267918"
+		SoundClick:Play()
+		
+		local Player = game.Players.LocalPlayer
+		local Part = Instance.new("Part", game.Workspace)
+		local Stairs = game.Workspace.Stairs:GetChildren()
+		local HumanoidRootPart = Player.Character.HumanoidRootPart
+		local InputText = script.Parent.Parent.Parent.Input
+		
+		Part.Anchored = true
+		
+		Part.Position = Vector3.new(81.015152, 146.53299, -250.052811, -0.978149116, 0.16117464, -0.131327629, 0.135372892, 0.973167658, 0.186061695, 0.157792225, 0.164217904, -0.973721802)
+		
+		Part.CanCollide = false
+		
+		Player.Character.Humanoid.WalkSpeed = 0
+		
+		wait(3)
+		
+		HumanoidRootPart.CFrame = Part.CFrame
+		
+		for i,StairsE in pairs(Stairs) do
+			StairsE.Position = Vector3.new(81.015152, 146.53299, -250.052811, -0.978149116, 0.16117464, -0.131327629, 0.135372892, 0.973167658, 0.186061695, 0.157792225, 0.164217904, -0.973721802)
+			StairsE.CanCollide = false
+		end
+		
+		wait(2)
+		
+		InputText.Text = "Injected!"
+		wait(3)
+		InputText.Text = " "
+		
+	end)
+end
+coroutine.wrap(TUHMS_fake_script)()
+local function YNCVZ_fake_script() -- LocalHolder.DragAbleGui 
+	local script = Instance.new('LocalScript', LocalHolder)
+
+	local Gui = script.Parent
+	Gui.Draggable = true
+	Gui.Active = true
+end
+coroutine.wrap(YNCVZ_fake_script)()
+local function XJSBM_fake_script() -- ReJoin.ReJoin 
+	local script = Instance.new('LocalScript', ReJoin)
+
+	local button = script.Parent
+	local TeleportService = game:GetService("TeleportService")
+	local placeId = 8362263552
+	
+	button.MouseButton1Click:Connect(function()
+		TeleportService:Teleport(placeId, game.Players.LocalPlayer)
+	end)
+end
+coroutine.wrap(XJSBM_fake_script)()
+local function SLBFGM_fake_script() -- LocalHolder.DestroyTheUseless 
+	local script = Instance.new('LocalScript', LocalHolder)
+
+	local Dumbass = game.Workspace.Stairs.ss
+	
+	Dumbass:Destroy()
+end
+coroutine.wrap(SLBFGM_fake_script)()
+local function EPTFL_fake_script() -- LocalHolder.WelcomeSound 
+	local script = Instance.new('LocalScript', LocalHolder)
+
+	local Sound = Instance.new("Sound", script.Parent)
+	
+	Sound.SoundId = "rbxassetid://5829559206"
+	
+	Sound:Play()
+end
+coroutine.wrap(EPTFL_fake_script)()
+local function FANS_fake_script() -- LocalHolder.GuiWont 
+	local script = Instance.new('LocalScript', LocalHolder)
+
+	local Gui = script.Parent.Parent
+	Gui.ResetOnSpawn = false
+end
+coroutine.wrap(FANS_fake_script)()
