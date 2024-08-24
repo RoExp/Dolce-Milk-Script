@@ -1,3 +1,5 @@
+--Dolce Milk Updated Scipt (Only Sounds Updated)
+
 local GuI = Instance.new("ScreenGui")
 local LocalHolder = Instance.new("Frame")
 local UICorner = Instance.new("UICorner")
@@ -13,6 +15,8 @@ local Avaliable = Instance.new("TextLabel")
 local ReJoin = Instance.new("TextButton")
 local UICorner_3 = Instance.new("UICorner")
 local Input = Instance.new("TextLabel")
+
+--Properties:
 
 GuI.Name = "GuI"
 GuI.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
@@ -167,18 +171,19 @@ Input.TextWrapped = true
 
 -- Scripts:
 
-local function UYTJS_fake_script() -- TextButton.Destroy 
+local function ZCNRUD_fake_script() -- TextButton.Destroy 
 	local script = Instance.new('LocalScript', TextButton)
 
 	script.Parent.MouseButton1Up:Connect(function()
-		local Gui = script.Parent.Parent.Parent.Parent
 		local Sound = Instance.new("Sound", script.Parent)
 		Sound.SoundId = "rbxassetid://5801257793"
+		Sound:Play()
+		local Gui = script.Parent.Parent.Parent.Parent
 		Gui:Destroy()
 	end)
 end
-coroutine.wrap(UYTJS_fake_script)()
-local function TUHMS_fake_script() -- StairsBreaker.StairBreaker 
+coroutine.wrap(ZCNRUD_fake_script)()
+local function THEHKRP_fake_script() -- StairsBreaker.StairBreaker 
 	local script = Instance.new('LocalScript', StairsBreaker)
 
 	script.Parent.MouseButton1Up:Connect(function()
@@ -218,16 +223,16 @@ local function TUHMS_fake_script() -- StairsBreaker.StairBreaker
 		
 	end)
 end
-coroutine.wrap(TUHMS_fake_script)()
-local function YNCVZ_fake_script() -- LocalHolder.DragAbleGui 
+coroutine.wrap(THEHKRP_fake_script)()
+local function PHCYP_fake_script() -- LocalHolder.DragAbleGui 
 	local script = Instance.new('LocalScript', LocalHolder)
 
 	local Gui = script.Parent
 	Gui.Draggable = true
 	Gui.Active = true
 end
-coroutine.wrap(YNCVZ_fake_script)()
-local function XJSBM_fake_script() -- ReJoin.ReJoin 
+coroutine.wrap(PHCYP_fake_script)()
+local function KDPVT_fake_script() -- ReJoin.ReJoin 
 	local script = Instance.new('LocalScript', ReJoin)
 
 	local button = script.Parent
@@ -238,16 +243,16 @@ local function XJSBM_fake_script() -- ReJoin.ReJoin
 		TeleportService:Teleport(placeId, game.Players.LocalPlayer)
 	end)
 end
-coroutine.wrap(XJSBM_fake_script)()
-local function SLBFGM_fake_script() -- LocalHolder.DestroyTheUseless 
+coroutine.wrap(KDPVT_fake_script)()
+local function FQDSG_fake_script() -- LocalHolder.DestroyTheUseless 
 	local script = Instance.new('LocalScript', LocalHolder)
 
 	local Dumbass = game.Workspace.Stairs.ss
 	
 	Dumbass:Destroy()
 end
-coroutine.wrap(SLBFGM_fake_script)()
-local function EPTFL_fake_script() -- LocalHolder.WelcomeSound 
+coroutine.wrap(FQDSG_fake_script)()
+local function RECRD_fake_script() -- LocalHolder.WelcomeSound 
 	local script = Instance.new('LocalScript', LocalHolder)
 
 	local Sound = Instance.new("Sound", script.Parent)
@@ -256,11 +261,11 @@ local function EPTFL_fake_script() -- LocalHolder.WelcomeSound
 	
 	Sound:Play()
 end
-coroutine.wrap(EPTFL_fake_script)()
-local function FANS_fake_script() -- LocalHolder.GuiWont 
+coroutine.wrap(RECRD_fake_script)()
+local function BHOEKEJ_fake_script() -- LocalHolder.GuiWont 
 	local script = Instance.new('LocalScript', LocalHolder)
 
 	local Gui = script.Parent.Parent
 	Gui.ResetOnSpawn = false
 end
-coroutine.wrap(FANS_fake_script)()
+coroutine.wrap(BHOEKEJ_fake_script)()
