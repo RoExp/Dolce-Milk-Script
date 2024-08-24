@@ -1,0 +1,297 @@
+--Dolce Milk Obby Script
+
+local LocalGui = Instance.new("ScreenGui")
+local CloseFrame = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local Holder = Instance.new("Frame")
+local StairsLabel = Instance.new("TextLabel")
+local UICorner_2 = Instance.new("UICorner")
+local YesNo = Instance.new("Frame")
+local YessNooo = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local JustALineIdk = Instance.new("Frame")
+local CloseGUI = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local LabelObby = Instance.new("TextLabel")
+local Rejoin = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local LabelObby_2 = Instance.new("TextLabel")
+local MainInput = Instance.new("TextLabel")
+local UICorner_6 = Instance.new("UICorner")
+
+--Properties:
+
+LocalGui.Name = "LocalGui"
+LocalGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+LocalGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+CloseFrame.Name = "CloseFrame"
+CloseFrame.Parent = LocalGui
+CloseFrame.BackgroundColor3 = Color3.fromRGB(65, 65, 65)
+CloseFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+CloseFrame.BorderSizePixel = 0
+CloseFrame.Position = UDim2.new(0.32790494, 0, 0.197044328, 0)
+CloseFrame.Size = UDim2.new(0, 334, 0, 29)
+
+UICorner.CornerRadius = UDim.new(0.300000012, 0)
+UICorner.Parent = CloseFrame
+
+Holder.Name = "Holder"
+Holder.Parent = CloseFrame
+Holder.BackgroundColor3 = Color3.fromRGB(65, 65, 65)
+Holder.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Holder.BorderSizePixel = 0
+Holder.Position = UDim2.new(0, 0, 0.489326745, 0)
+Holder.Size = UDim2.new(0, 334, 0, 180)
+
+StairsLabel.Name = "StairsLabel"
+StairsLabel.Parent = Holder
+StairsLabel.BackgroundColor3 = Color3.fromRGB(91, 91, 91)
+StairsLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+StairsLabel.BorderSizePixel = 0
+StairsLabel.Position = UDim2.new(0.032934133, 0, 0.166666672, 0)
+StairsLabel.Size = UDim2.new(0, 245, 0, 32)
+StairsLabel.Font = Enum.Font.Cartoon
+StairsLabel.Text = "FE Stairs Hack ( Brings You To The 4th Stage)"
+StairsLabel.TextColor3 = Color3.fromRGB(226, 226, 226)
+StairsLabel.TextScaled = true
+StairsLabel.TextSize = 14.000
+StairsLabel.TextStrokeTransparency = 0.000
+StairsLabel.TextWrapped = true
+
+UICorner_2.CornerRadius = UDim.new(0, 4)
+UICorner_2.Parent = StairsLabel
+
+YesNo.Name = "YesNo"
+YesNo.Parent = Holder
+YesNo.BackgroundColor3 = Color3.fromRGB(91, 91, 91)
+YesNo.BorderColor3 = Color3.fromRGB(0, 0, 0)
+YesNo.BorderSizePixel = 0
+YesNo.Position = UDim2.new(0.835329354, 0, 0.166666672, 0)
+YesNo.Size = UDim2.new(0, 38, 0, 32)
+
+YessNooo.Name = "Yess Nooo"
+YessNooo.Parent = YesNo
+YessNooo.BackgroundColor3 = Color3.fromRGB(91, 91, 91)
+YessNooo.BorderColor3 = Color3.fromRGB(0, 0, 0)
+YessNooo.BorderSizePixel = 0
+YessNooo.Position = UDim2.new(0.184210524, 0, 0.21875, 0)
+YessNooo.Size = UDim2.new(0, 23, 0, 17)
+YessNooo.Font = Enum.Font.SourceSans
+YessNooo.Text = ""
+YessNooo.TextColor3 = Color3.fromRGB(0, 0, 0)
+YessNooo.TextSize = 14.000
+
+UICorner_3.Parent = YesNo
+
+JustALineIdk.Name = "JustALineIdk"
+JustALineIdk.Parent = CloseFrame
+JustALineIdk.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+JustALineIdk.BorderColor3 = Color3.fromRGB(0, 0, 0)
+JustALineIdk.BorderSizePixel = 0
+JustALineIdk.Position = UDim2.new(0, 0, 1, 0)
+JustALineIdk.Size = UDim2.new(0, 334, 0, 1)
+
+CloseGUI.Name = "CloseGUI"
+CloseGUI.Parent = CloseFrame
+CloseGUI.BackgroundColor3 = Color3.fromRGB(140, 132, 114)
+CloseGUI.BackgroundTransparency = 0.700
+CloseGUI.BorderColor3 = Color3.fromRGB(0, 0, 0)
+CloseGUI.BorderSizePixel = 0
+CloseGUI.Position = UDim2.new(0.886227548, 0, 0.103448279, 0)
+CloseGUI.Size = UDim2.new(0, 29, 0, 22)
+CloseGUI.Font = Enum.Font.Unknown
+CloseGUI.Text = "X"
+CloseGUI.TextColor3 = Color3.fromRGB(229, 229, 229)
+CloseGUI.TextSize = 14.000
+
+UICorner_4.CornerRadius = UDim.new(0, 5)
+UICorner_4.Parent = CloseGUI
+
+LabelObby.Name = "LabelObby"
+LabelObby.Parent = CloseFrame
+LabelObby.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+LabelObby.BackgroundTransparency = 1.000
+LabelObby.BorderColor3 = Color3.fromRGB(0, 0, 0)
+LabelObby.BorderSizePixel = 0
+LabelObby.Position = UDim2.new(-0.0868263468, 0, -0.0344827585, 0)
+LabelObby.Size = UDim2.new(0, 200, 0, 29)
+LabelObby.Font = Enum.Font.Unknown
+LabelObby.Text = "Dolce Milk Obby Exploit"
+LabelObby.TextColor3 = Color3.fromRGB(177, 177, 177)
+LabelObby.TextSize = 14.000
+LabelObby.TextStrokeTransparency = 0.000
+
+Rejoin.Name = "Rejoin"
+Rejoin.Parent = CloseFrame
+Rejoin.BackgroundColor3 = Color3.fromRGB(91, 91, 91)
+Rejoin.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Rejoin.BorderSizePixel = 0
+Rejoin.Position = UDim2.new(0.1017965, 0, 3.34482765, 0)
+Rejoin.Size = UDim2.new(0, 256, 0, 27)
+Rejoin.Font = Enum.Font.Cartoon
+Rejoin.Text = "Re-Join the game"
+Rejoin.TextColor3 = Color3.fromRGB(226, 226, 226)
+Rejoin.TextScaled = true
+Rejoin.TextSize = 14.000
+Rejoin.TextStrokeTransparency = 0.000
+Rejoin.TextWrapped = true
+
+UICorner_5.CornerRadius = UDim.new(0, 4)
+UICorner_5.Parent = Rejoin
+
+LabelObby_2.Name = "LabelObby"
+LabelObby_2.Parent = CloseFrame
+LabelObby_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+LabelObby_2.BackgroundTransparency = 1.000
+LabelObby_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+LabelObby_2.BorderSizePixel = 0
+LabelObby_2.Position = UDim2.new(0.023952188, 0, 4.96551704, 0)
+LabelObby_2.Size = UDim2.new(0, 317, 0, 29)
+LabelObby_2.Font = Enum.Font.Unknown
+LabelObby_2.Text = "We Will Try To Add Some Things Later!"
+LabelObby_2.TextColor3 = Color3.fromRGB(177, 177, 177)
+LabelObby_2.TextScaled = true
+LabelObby_2.TextSize = 14.000
+LabelObby_2.TextStrokeTransparency = 0.000
+LabelObby_2.TextWrapped = true
+
+MainInput.Name = "MainInput"
+MainInput.Parent = LocalGui
+MainInput.BackgroundColor3 = Color3.fromRGB(65, 65, 65)
+MainInput.BackgroundTransparency = 1.000
+MainInput.BorderColor3 = Color3.fromRGB(0, 0, 0)
+MainInput.BorderSizePixel = 0
+MainInput.Position = UDim2.new(0.327380955, 0, 0.816912949, 0)
+MainInput.Size = UDim2.new(0, 325, 0, 54)
+MainInput.Font = Enum.Font.Arial
+MainInput.Text = "• Welcome!"
+MainInput.TextColor3 = Color3.fromRGB(255, 255, 255)
+MainInput.TextScaled = true
+MainInput.TextSize = 50.000
+MainInput.TextStrokeTransparency = 0.000
+MainInput.TextWrapped = true
+
+UICorner_6.Parent = MainInput
+
+-- Scripts:
+
+local function FQZCH_fake_script() -- YessNooo.LocalScript 
+	local script = Instance.new('LocalScript', YessNooo)
+
+	script.Parent.MouseButton1Up:Connect(function()
+	--Returns the Color If Pressed Again
+		
+		local button = script.Parent
+		local originalColor = button.BackgroundColor3
+		local newColor = Color3.fromRGB(170, 170, 170)
+		local isOriginalColor = true
+		
+		button.MouseButton1Click:Connect(function()
+			if isOriginalColor then
+				button.BackgroundColor3 = newColor
+			else
+				button.BackgroundColor3 = originalColor
+			end
+			isOriginalColor = not isOriginalColor
+		end)
+		
+	-- Locals
+		
+	local Part = Instance.new("Part", game.Workspace)
+	local Stairs = game.Workspace.Stairs:GetChildren()
+	local Player = game.Players.LocalPlayer
+	local HumanoidRootParts = Player.Character.HumanoidRootPart
+	local TextLabel = script.Parent.Parent.Parent.Parent.Parent.MainInput
+		
+		
+	-- Part Manipulation
+	Part.Anchored = true
+		
+	Part.Position = Vector3.new(81.015152, 146.53299, -250.052811, -0.978149116, 0.16117464, -0.131327629, 0.135372892, 0.973167658, 0.186061695, 0.157792225, 0.164217904, -0.973721802)
+		
+	Part.CanCollide = false
+	
+	Player.Character.Humanoid.WalkSpeed = 0
+	
+	--TextLabel TextChange
+		TextLabel.Text = "• Injecting."
+		wait(1)
+		TextLabel.Text = "• Injecting.."
+		wait(1)
+		TextLabel.Text = "• Injecting..."
+	-- Main thing
+	
+	HumanoidRootParts.CFrame = Part.CFrame
+	
+	for i,Exploit in pairs (Stairs) do
+		Exploit.Position = Vector3.new(81.015152, 146.53299, -250.052811, -0.978149116, 0.16117464, -0.131327629, 0.135372892, 0.973167658, 0.186061695, 0.157792225, 0.164217904, -0.973721802)
+		Exploit.CanCollide = false
+	end
+		
+		TextLabel.Text = "• Sucessfully injected!"
+		wait(5)
+		TextLabel.Text = " "
+	end)
+end
+coroutine.wrap(FQZCH_fake_script)()
+local function YWWSGV_fake_script() -- CloseGUI.DestroyGUI 
+	local script = Instance.new('LocalScript', CloseGUI)
+
+	local GUi = script.Parent.Parent.Parent.Parent
+	local Input = script.Parent.Parent.Parent.MainInput
+	local Player = game.Players.LocalPlayer
+	
+	script.Parent.MouseButton1Up:Connect(function()
+		Input.Text = "Destroying GUI, To Start GUI again Execute the script Again!"
+		Player.Character.Humanoid.WalkSpeed = 16
+		wait(5)
+		GUi:Destroy()
+	end)
+end
+coroutine.wrap(YWWSGV_fake_script)()
+local function YVOJPO_fake_script() -- CloseFrame.DraggableScript 
+	local script = Instance.new('LocalScript', CloseFrame)
+
+	--Makes the GUI dragable
+	
+	
+	local Gui = script.Parent
+	
+	Gui.Draggable = true
+	Gui.Active = true
+end
+coroutine.wrap(YVOJPO_fake_script)()
+local function TBDPWQ_fake_script() -- Rejoin.RejoinPonos 
+	local script = Instance.new('LocalScript', Rejoin)
+
+	local button = script.Parent
+	local TeleportService = game:GetService("TeleportService")
+	local placeId = 8362263552
+	
+	button.MouseButton1Click:Connect(function()
+		TeleportService:Teleport(placeId, game.Players.LocalPlayer)
+	end)
+end
+coroutine.wrap(TBDPWQ_fake_script)()
+local function OSQCHVD_fake_script() -- LocalGui.Stairs 
+	local script = Instance.new('LocalScript', LocalGui)
+
+	local UselessScript = game.Workspace.Stairs.ss
+	
+	UselessScript:Destroy()
+end
+coroutine.wrap(OSQCHVD_fake_script)()
+local function IQZD_fake_script() -- LocalGui.Inf 
+	local script = Instance.new('LocalScript', LocalGui)
+
+	local player = game.Players.LocalPlayer
+	local gui = script.Parent
+	
+	local function onCharacterAdded(character)
+		gui.Enabled = true
+	end
+	
+	player.CharacterAdded:Connect(onCharacterAdded)
+end
+coroutine.wrap(IQZD_fake_script)()
