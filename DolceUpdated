@@ -1575,7 +1575,6 @@ local function VPKZDD_fake_script() -- Main_2.MainScriptLocal
 			local Inputs = script.Parent.Parent.Parent.Parent.Parent.Parent.MainInput
 			
 			Inputs.Text = "Executed! To Use Press The Button Again"
-			wait(5)
 			Inputs.Text = " "
 		end
 	end)
