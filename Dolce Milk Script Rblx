@@ -1,5 +1,7 @@
 --Dolce Milk Obby Script
 
+FOR ANDROID/IOS
+
 local LocalGui = Instance.new("ScreenGui")
 local CloseFrame = Instance.new("Frame")
 local UICorner = Instance.new("UICorner")
