@@ -1,0 +1,27 @@
+local U = game.Workspace.Stairs.ss
+U:Destroy()
+wait(.1)
+
+loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+print("Lauched")
+local Player = game:GetService("Players").LocalPlayer
+
+Player.Chatted:Connect(function(Message)
+	if Message == ".de" then
+		for i,Stairs in pairs (game:GetService("Workspace").Stairs:GetChildren()) do
+			firetouchinterest(game.Players.LocalPlayer.Character.HumanoidRootPart, Stairs, 0)
+		end
+	elseif Message == ".re" then
+		local HumanoidRootPart = Player.Character.HumanoidRootPart
+		wait(0.1)
+		local New = HumanoidRootPart:clone()
+		wait(0.1)
+		HumanoidRootPart:Destroy()
+		New.Parent = Player.Character
+		local humanoid = Player.Character:WaitForChild("Humanoid")
+		
+		humanoid:TakeDamage(100)
+        elseif Message == ".launch" then
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/RoExp/Dolce-Milk-Script/main/DolceUpdated"))()
+	end
+end)
