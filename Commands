@@ -1,0 +1,98 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local Cmds = Instance.new("ScreenGui")
+local Main = Instance.new("Frame")
+local Ok = Instance.new("TextButton")
+local de = Instance.new("TextLabel")
+local reset = Instance.new("TextLabel")
+local launch = Instance.new("TextLabel")
+local launch_2 = Instance.new("TextLabel")
+
+--Properties:
+
+Cmds.Name = "Cmds"
+Cmds.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+Cmds.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Main.Name = "Main"
+Main.Parent = Cmds
+Main.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Main.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Main.BorderSizePixel = 0
+Main.Position = UDim2.new(0.349137932, 0, 0.291461408, 0)
+Main.Size = UDim2.new(0, 188, 0, 195)
+
+Ok.Name = "Ok"
+Ok.Parent = Main
+Ok.BackgroundColor3 = Color3.fromRGB(50, 255, 47)
+Ok.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Ok.BorderSizePixel = 0
+Ok.Position = UDim2.new(0.228723407, 0, 0.804762006, 0)
+Ok.Size = UDim2.new(0, 102, 0, 38)
+Ok.Font = Enum.Font.Unknown
+Ok.Text = "Ok!"
+Ok.TextColor3 = Color3.fromRGB(40, 153, 66)
+Ok.TextSize = 14.000
+Ok.TextStrokeTransparency = 0.430
+
+de.Name = "de"
+de.Parent = Main
+de.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+de.BorderColor3 = Color3.fromRGB(0, 0, 0)
+de.BorderSizePixel = 0
+de.Size = UDim2.new(0, 188, 0, 50)
+de.Font = Enum.Font.SourceSans
+de.Text = ".de (Destroys the stairs"
+de.TextColor3 = Color3.fromRGB(0, 0, 0)
+de.TextSize = 14.000
+
+reset.Name = "reset"
+reset.Parent = Main
+reset.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+reset.BorderColor3 = Color3.fromRGB(0, 0, 0)
+reset.BorderSizePixel = 0
+reset.Position = UDim2.new(0, 0, 0.169230774, 0)
+reset.Size = UDim2.new(0, 188, 0, 50)
+reset.Font = Enum.Font.SourceSans
+reset.Text = ".re (Reset)"
+reset.TextColor3 = Color3.fromRGB(0, 0, 0)
+reset.TextSize = 14.000
+
+launch.Name = "launch"
+launch.Parent = Main
+launch.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+launch.BorderColor3 = Color3.fromRGB(0, 0, 0)
+launch.BorderSizePixel = 0
+launch.Position = UDim2.new(0, 0, 0.369230777, 0)
+launch.Size = UDim2.new(0, 188, 0, 50)
+launch.Font = Enum.Font.SourceSans
+launch.Text = ".launch (Launchs the gui)"
+launch.TextColor3 = Color3.fromRGB(0, 0, 0)
+launch.TextSize = 14.000
+
+launch_2.Name = "launch"
+launch_2.Parent = Main
+launch_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+launch_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+launch_2.BorderSizePixel = 0
+launch_2.Position = UDim2.new(0, 0, 0.579487205, 0)
+launch_2.Size = UDim2.new(0, 188, 0, 50)
+launch_2.Font = Enum.Font.SourceSans
+launch_2.Text = ".cmds (Shows avaliable commands)"
+launch_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+launch_2.TextSize = 14.000
+
+-- Scripts:
+
+local function OAPJTB_fake_script() -- Ok.LocalScript 
+	local script = Instance.new('LocalScript', Ok)
+
+	script.Parent.MouseButton1Up:Connect(function()
+		local Cmds = script.Parent.Parent.Parent
+		Cmds:Destroy()
+	end)
+end
+coroutine.wrap(OAPJTB_fake_script)()
