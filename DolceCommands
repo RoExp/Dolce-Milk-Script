@@ -1,3 +1,6 @@
+local useless = game.Workspace.Stairs.ss
+useless:Destroy()
+
 loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
 print("Lauched")
 local Player = game:GetService("Players").LocalPlayer
