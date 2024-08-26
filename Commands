@@ -1,8 +1,3 @@
--- Gui to Lua
--- Version: 3.2
-
--- Instances:
-
 local Cmds = Instance.new("ScreenGui")
 local Main = Instance.new("Frame")
 local Ok = Instance.new("TextButton")
@@ -11,7 +6,6 @@ local reset = Instance.new("TextLabel")
 local launch = Instance.new("TextLabel")
 local launch_2 = Instance.new("TextLabel")
 
---Properties:
 
 Cmds.Name = "Cmds"
 Cmds.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
