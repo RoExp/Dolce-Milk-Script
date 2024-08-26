@@ -1,7 +1,3 @@
-local U = game.Workspace.Stairs.ss
-U:Destroy()
-wait(.1)
-
 loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
 print("Lauched")
 local Player = game:GetService("Players").LocalPlayer
